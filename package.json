@@ -1,6 +1,9 @@
 {
-  "name": "strapi-plugin-github-projects",
+  "name": "@andypsheridan/strapi-plugin-github-projects",
   "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "A Strapi v4 plugin to create projects from your public GitHub repositories from the admin panel.",
   "strapi": {
     "name": "github-projects",
