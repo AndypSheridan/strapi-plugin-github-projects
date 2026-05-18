@@ -1,18 +1,26 @@
 {
-  "name": "github-projects",
-  "version": "0.0.0",
-  "description": "This is the description of the plugin.",
+  "name": "strapi-plugin-github-projects",
+  "version": "0.1.0",
+  "description": "A Strapi v4 plugin to create projects from your public GitHub repositories from the admin panel.",
   "strapi": {
-    "name": "Github Projects",
-    "description": "A Strapi plugin that allows you to generate projects from Github repos.",
-    "kind": "plugin",
-    "displayName": "Github Projects"
+    "name": "github-projects",
+    "displayName": "Github Projects",
+    "description": "Create projects from your public GitHub repositories.",
+    "kind": "plugin"
   },
+  "main": "strapi-server.js",
+  "files": [
+    "admin",
+    "server",
+    "strapi-admin.js",
+    "strapi-server.js"
+  ],
   "dependencies": {
     "@octokit/request": "^10.0.9",
     "@strapi/design-system": "^1.6.3",
     "@strapi/helper-plugin": "^4.6.0",
     "@strapi/icons": "^1.6.3",
+    "axios": "^1.7.0",
     "markdown-it": "^14.1.1",
     "prop-types": "^15.7.2"
   },
@@ -23,20 +31,37 @@
     "styled-components": "^5.3.6"
   },
   "peerDependencies": {
+    "@strapi/strapi": "^4.0.0",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0",
     "react-router-dom": "^5.2.0",
-    "styled-components": "^5.2.1",
-    "@strapi/strapi": "*"
+    "styled-components": "^5.2.1"
   },
+  "keywords": [
+    "strapi",
+    "strapi-plugin",
+    "github",
+    "github-projects",
+    "repositories"
+  ],
   "author": {
-    "name": "A Strapi developer"
+    "name": "Andy Sheridan",
+    "email": "andy.sheridan@sendpilot.co.uk"
   },
   "maintainers": [
     {
-      "name": "A Strapi developer"
+      "name": "Andy Sheridan",
+      "email": "andy.sheridan@sendpilot.co.uk"
     }
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndypSheridan/strapi-plugin-github-projects.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AndypSheridan/strapi-plugin-github-projects/issues"
+  },
+  "homepage": "https://github.com/AndypSheridan/strapi-plugin-github-projects#readme",
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
