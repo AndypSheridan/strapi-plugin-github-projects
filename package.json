@@ -15,6 +15,20 @@
     "strapi-admin.js",
     "strapi-server.js"
   ],
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "<rootDir>/__tests__/**/*.test.js"
+    ],
+    "collectCoverageFrom": [
+      "server/**/*.js"
+    ]
+  },
   "dependencies": {
     "@octokit/request": "^10.0.9",
     "@strapi/design-system": "^1.6.3",
@@ -25,6 +39,7 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
+    "jest": "^30.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.3.4",
